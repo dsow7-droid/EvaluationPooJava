@@ -1,0 +1,19 @@
+public class Produit {   
+      // Attributs (état de chaque objet)   
+        String libelle;    
+       long prix;    
+        int stock; 
+ 
+    // Méthodes (comportement)    
+     void approvisionner(int quantite) {       
+          stock += quantite;    
+         } 
+ 
+    boolean estDisponible() {       
+          return stock > 0;   
+          } 
+ 
+    String description() {       
+          return libelle + " - " + prix + " FCFA (stock : " + stock + ")";   
+          }
+         } 
